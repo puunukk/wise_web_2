@@ -16,6 +16,7 @@ const style = themes => ({
       size: '20px',
       weight: '600'
     },
+    "&:hover": { "text-decoration": 'none' },
     "&:after": {
       content: '""',
       display: 'block',
@@ -31,7 +32,7 @@ const style = themes => ({
         "timing-function": 'initial',
         delay: 'initial',
       },
-      "&:hover": { height: '4px' }
+      "&:hover": { "text-decoration": 'none', height: '4px' }
     }
   },
   logo: {

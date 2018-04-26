@@ -1,0 +1,50 @@
+@import './variables.scss';
+@import 'bootstrap/scss/bootstrap.scss';
+
+body {
+  background-color: antiquewhite;
+}
+header{
+  display: block;
+  position: static;
+  top: 0;
+  margin: 0 auto;
+  max-width: 1000px;
+  font-size: 14px;
+  line-height: 28px;
+  height: 100px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration-color: #353635;
+}
+.logo{
+    width: 170px;
+    height: 28px;
+    top: 0;
+    left: 50%;
+    margin-left: -85px;
+}
+.btn{
+  display: inline-block;
+  float: left;
+  margin: 0 0 0 60px;
+}
+.btn::after{
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 0px;
+  background-color: currentColor;
+  -webkit-transition: width 250ms;
+  transition: width 250ms;
+}
+.btn:hover:after{
+  height: 4px;
+}
+.Container:first-child {
+  margin: 0;
+}
